@@ -6,7 +6,7 @@ export default function Forecast({weather,daily}) {
   return (
     <motion.div initial={{opacity:0.3,y:-40}} animate={{opacity:1,y:0}} transition={{ease:'easeIn',duration:0.4}}>
      <div className="hourly">
-        <h1 className='bo'>Hourly Forecast</h1>
+        <h4 className='bo'>Hourly Forecast</h4>
         <div className="mern">
         <div className="hous">
             <h1>01:00 PM</h1>

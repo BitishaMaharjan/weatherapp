@@ -5,7 +5,7 @@ export default function Daily({daily}) {
   return (
     <motion.div initial={{opacity:0.3,y:-40}} animate={{opacity:1,y:0}} transition={{ease:'easeIn',duration:0.4}}>
       <div className="hourly">
-        <h1 className='bo'>Daily Forecast</h1>
+        <h3 className='bo'>Daily Forecast</h3>
         <div className="mern mern9">
           <div className="hous">
             <h1>Sun</h1>

@@ -32,6 +32,9 @@ export default function Wright() {
   const sunsetTime = new Date(weather?.sys?.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   
   return (
+    <>
+    
+    
     <div className="main-div">
       <div className="weather-right">
         <div className="today">
@@ -114,5 +117,6 @@ export default function Wright() {
         </div>
       </div>
     </div>
+    </>
   );
 }

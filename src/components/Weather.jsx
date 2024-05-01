@@ -42,6 +42,14 @@ export default function Weather() {
         fetchDailyData();
       }
     }, [lat, lon, weatherData]); // Add weatherData to the dependency array
+
+    const getWeatherDescription = () => {
+      if (weatherData && weatherData.weather && weatherData.weather.length > 0) {
+        return weatherData.weather[0].description;
+      } else {
+        return "Loading...";
+      }
+    };
   
     return (
       <>
@@ -50,15 +58,19 @@ export default function Weather() {
           
             <div className="weather-left">
            
-              <div >
-              <h1 className="wea">Right now in</h1>
+              <div className="head" >
+                 <h3>Right Now in</h3>
                 <input
                   type="text"
                   value={data}
+                  className="input-field"
                   onChange={handleChange}
                   onKeyPress={handleKeyPress}
-                  placeholder="Search"
+                  placeholder={` ${!weatherData ? "Loading..." : weatherData.name ? weatherData.name : "Search new places"}`}
+
+
                 />
+                <h3 className="h"> ,it's {getWeatherDescription()}</h3>
                 
               </div>
            
