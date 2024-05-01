@@ -1,0 +1,233 @@
+.putcenre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:90%;
+    max-height:70%;
+    margin: 4% 20%;
+}
+.weather{
+    display:flex;
+    width:850px;
+    border-radius:13px;
+   
+}
+.place{
+    width:150px;
+    height:200px;
+    border-radius:15px;
+    background: black;
+}
+.place img{
+    width:150px;
+    height:200px;
+    border-radius:15px;
+object-fit: cover;
+}
+.city-cards {
+    display:flex;
+    align-items: center;
+}
+.cites{
+    display:flex;
+    gap:1em;
+   
+}
+.hourly{
+    display:flex;
+    flex-direction: column;
+gap:.5em;
+}
+.bo{
+    padding-bottom:0.6em;
+    border-bottom:2px solid gray;
+}
+.mern{
+    display:flex;
+    gap:1.5em;
+  
+}
+.boxr{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weather-left{
+
+    width:510px;
+    display:flex;
+    padding:0.8em;
+    flex-direction: column;
+    gap:1em;
+    justify-content: center;
+}
+.inp{
+    align-self: center;
+}
+.mern9{
+    gap:2em;
+   
+}
+input[type='text']{
+    width:300px;
+    padding:0.1em 0 0 1em;
+    font-family: 'hammersmith one';
+    border: none;
+    outline: none;
+}
+.icon{
+    width:30px;
+    height:30px;
+    background:white;
+    padding:0.1em;
+    border:2px solid black;
+}.wea{
+    color:blue;
+    font-family:"poppins";
+     font-size:1.3rem;
+}
+.wea span{
+    font-weight: bold;
+}
+.hous{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hous h1{
+font-size:0.8rem;
+}
+.cloud{
+    font-size:1.3rem;
+}
+.tempdet{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.weather-right {
+    flex: 1;
+    padding: 0.8em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .weather-right .today {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weather-right .today .wlogo {
+    font-size: 7rem;
+  }
+  
+  .weather-right h1 {
+    font-family: 'hammersmith one';
+    font-size: 0.9rem;
+  }
+  
+  .weather-right .dare {
+    font-family: 'hammersmith one';
+    font-size: 0.8rem;
+  }
+  
+  .weather-right .temp {
+    font-size: 3rem;
+    font-family: 'poppins';
+    margin-top: 0px;
+  }
+  
+  .weather-right .placeNAME {
+    font-family: 'hammersmith one';
+    margin-top: -10px;
+    font-size: 0.8rem;
+  }
+  
+  .weather-right .tempdet {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .weather-right .boxL,
+  .weather-right .boxr {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .weather-right .boxwa {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: 'hammersmith one';
+  }
+  
+  @media (max-width: 877px) {
+    .weather-right {
+      width: 100%;
+    }
+  
+    .weather-right .tempdet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 539px) {
+    .weather-right .place img {
+      width: 60px;
+      height: 100px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+  
+    .weather-right input[type='text'] {
+      max-width: 200px;
+    }
+  }
+ .main{
+    display: flex;
+    flex-direction: row;
+    
+ } 
+ .main:not(:first-child):not(:last-child) {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  /* wright.css */
+
+@keyframes farmerMotion {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .farmer-motion {
+    animation: farmerMotion 3s infinite;
+  }
+  
+  .input-container {
+    border: none;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .input-container input[type="text"]::placeholder {
+    animation: blink 1s step-start infinite;
+  }
+ .h11{
+  padding: 3%;
+ }   

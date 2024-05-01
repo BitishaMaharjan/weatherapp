@@ -1,0 +1,11 @@
+.im{
+  width:120px;
+  height:35px;
+
+
+}
+.im img{
+  width:120px;
+  height:35px;
+  object-fit: cover;
+}
