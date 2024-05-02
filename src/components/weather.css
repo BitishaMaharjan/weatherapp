@@ -201,35 +201,62 @@ font-size:0.8rem;
     .weather-right {
       width: 100%;
     }
-  
     .weather-right .tempdet {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      justify-content: center;
+    }
+    .head{
+      margin-left: 12%;
+    }
+    .line{
+      display: none;
+    }
+    .weather{
+      flex-direction: column;
+      margin: 50% 50%;
+      padding-left: 10%;
+    }
+    .input-field{
+      max-width: 120px;
+      font-size: 25px;
+    }
+    .boxL{
+      margin-left: -30%;
+      padding-right: 20%;
+     
     }
   }
   
   @media (max-width: 539px) {
-    .weather-right .place img {
-      width: 60px;
-      height: 100px;
-      border-radius: 15px;
-      object-fit: cover;
+    .weather-right {
+      width: 100%;
     }
-  
-    .weather-right input[type='text'] {
-      max-width: 200px;
+    .weather-right .tempdet {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
-  }
- .main{
-    display: flex;
-    flex-direction: row;
-    
- } 
- .main:not(:first-child):not(:last-child) {
-    margin-left: 10px;
-    margin-right: 20px;
-  }
-  /* wright.css */
+    .head{
+      margin-left: 12%;
+    }
+    .line{
+      display: none;
+    }
+    .weather{
+      flex-direction: column;
+      margin: 50% 50%;
+      padding-left: 10%;
+    }
+    .input-field{
+      max-width: 120px;
+      font-size: 25px;
+    }
+    .boxL{
+      margin-left: -30%;
+      padding-right: 20%;
+     
+    }}
 
 @keyframes farmerMotion {
     0% { transform: translateY(0); }

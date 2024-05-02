@@ -74,9 +74,10 @@ export default function Weather() {
                 
               </div>
            
-             
+               <div className="line">
               {daily && <Forecast daily={daily} />}
               {daily && <Daily daily={daily} />}
+              </div>
             </div>
             <Wright weatherData={weatherData} />
           </div>
